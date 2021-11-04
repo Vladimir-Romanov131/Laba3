@@ -15,7 +15,7 @@ namespace _2
             {
                 for (int j = 0; j < razm; j++)
                 {
-                    mas[i, j] = rnd.Next(49); // пусть тоже будет как в прошлом задании
+                    mas[i, j] = rnd.Next(-30,40); // пусть тоже будет как в прошлом задании
                     Console.Write(mas[i, j] + "\t");
                 }
                 Console.WriteLine(); // а как повернуть?
