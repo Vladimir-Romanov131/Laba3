@@ -52,10 +52,10 @@ namespace _6
             Console.WriteLine("      Сумма элементов Массива     ");
             Console.WriteLine($"              |{r}|              ");
             Console.WriteLine("__________________________________");
-            Console.WriteLine("   Минимальный элементов Массива  ");
-            Console.WriteLine($"              |{minn}|              ");
+            Console.WriteLine("    Минимальный элемент Массива   ");
+            Console.WriteLine($"              |{minn}|           ");
             Console.WriteLine("__________________________________");
-            Console.WriteLine("   Минимальный элементов Массива  ");
+            Console.WriteLine("    Минимальный элемент Массива   ");
             int min = minRecursive(mas);
             Console.WriteLine($"              |{min}|.R          ");
             Console.WriteLine("__________________________________");
@@ -69,33 +69,16 @@ namespace _6
             return mas[i] + c; 
         }
         static int minRecursive(int [] mas, int i = 0, int min =0)
-            {
-                int razm =5;
-                min = mas[0];
-                if (i == 0)
-                    return mas[0];
-                i--; 
-                if(mas[0] > mas[i])
-                mas[0] = mas[i];
-                mas[0] = min;
-                return minRecursive( mas, i, min);
-            }
-
-                    
-            
-        
-
-
-        
-
-
-
-
-
-
-
-
-
-
+        {
+            int razm =5;
+            min = mas[0];
+            if (i == 0)
+                return mas[0];
+            i--; 
+            if(mas[0] > mas[i])
+            mas[0] = mas[i];
+            mas[0] = min;
+            return minRecursive( mas, i, min);
+        }
     }
 }
