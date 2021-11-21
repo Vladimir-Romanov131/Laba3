@@ -48,8 +48,8 @@ namespace _5
                         Smas[i,j] = mas1[i, k] *  mas[k,j];
                     }    
                 }
-                Console.WriteLine(); 
-            }for (int i = 0; i < razm; i++) // Ctrl+C \\ Ctr + V \\ из прошлого задания не карается ? надеюсь нет
+            }
+            for (int i = 0; i < razm; i++) // Ctrl+C \\ Ctr + V \\ из прошлого задания не карается ? надеюсь нет
             {
                 for (int j = 0; j < razm; j++)
                 {
